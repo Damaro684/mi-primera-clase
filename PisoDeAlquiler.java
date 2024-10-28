@@ -26,7 +26,7 @@ public class PisoDeAlquiler {
         return precioAlquiler;
     }
     
-    public void setUbicacion(String nuevoInquilino) {
+    public void setNuevoInquilino(String nuevoInquilino) {
         inquilino = nuevoInquilino;
     }
     
