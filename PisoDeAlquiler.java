@@ -37,4 +37,12 @@ public class PisoDeAlquiler {
     public void cambiarEstadoAlquilado() {
         alquilado = !alquilado;
     }
+    
+    public void imprimirEstadoDelObjeto() {
+        System.out.println( "Inquilino: " + inquilino + " | "+ "Precio del alquiler: " + precioAlquiler + " | "+ "En alquiler: " + alquilado);
+    }
+    
+    public String getEstadoDelObjeto() {
+        return "Inquilino: " + inquilino + " | "+ "Precio del alquiler: " + precioAlquiler + " | "+ "En alquiler: " + alquilado;
+    }
 }
