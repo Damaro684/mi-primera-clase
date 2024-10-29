@@ -1,6 +1,6 @@
 public class PisoDeAlquiler {
     
-    // Ubicacion del piso
+    // Inquilino del piso
     private String inquilino;
     // Precio del alquiler
     private int precioAlquiler;
@@ -37,12 +37,22 @@ public class PisoDeAlquiler {
     public void cambiarEstadoAlquilado() {
         alquilado = !alquilado;
     }
-    
-    public void imprimirEstadoDelObjeto() {
-        System.out.println( "Inquilino: " + inquilino + " | "+ "Precio del alquiler: " + precioAlquiler + " | "+ "En alquiler: " + alquilado);
+        public void imprimirEstadoDelObjeto() {
+        if (alquilado == true) {
+            System.out.println( "Inquilino: " + inquilino + " | "+ "Precio del alquiler: " + precioAlquiler + " | "+ "En alquiler: " + "sí");
+        }
+        else {
+            System.out.println( "Inquilino: " + inquilino + " | "+ "Precio del alquiler: " + precioAlquiler + " | "+ "En alquiler: " + "no");
+        }
     }
     
     public String getEstadoDelObjeto() {
-        return "Inquilino: " + inquilino + " | "+ "Precio del alquiler: " + precioAlquiler + " | "+ "En alquiler: " + alquilado;
+        if (alquilado == true) {
+            return "Inquilino: " + inquilino + " | "+ "Precio del alquiler: " + precioAlquiler + " | "+ "En alquiler: " + "sí";
+        }
+        else {
+            return "Inquilino: " + inquilino + " | "+ "Precio del alquiler: " + precioAlquiler + " | "+ "En alquiler: " + "no";        
+        }
     }
+
 }
